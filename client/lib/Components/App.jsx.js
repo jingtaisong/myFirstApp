@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div className="ui primary button">
-        <button class="ui primary button">Click Me</button>
+        <button className="ui primary button">Click Me</button>
       </div>  
     )
   }

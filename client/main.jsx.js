@@ -4,10 +4,11 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
+import createStore from './createStore';
 import App from './lib/Components/App.jsx';
 
 const Root = () => (
-  <Provider>
+  <Provider store={createStore()}>
     <App />
   </Provider>
 )
