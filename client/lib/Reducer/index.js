@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux-immutable';
 import Immutable from 'immutable';
 
 const testReducer = (state = Immutable.Map({'clickedTimes': 0}), action) => {

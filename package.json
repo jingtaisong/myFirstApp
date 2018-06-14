@@ -9,10 +9,12 @@
     "immutable": "^3.8.2",
     "meteor-node-stubs": "^0.3.2",
     "postcss-load-config": "^1.2.0",
+    "prop-types": "^15.6.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
+    "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {

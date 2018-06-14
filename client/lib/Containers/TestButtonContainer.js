@@ -4,17 +4,20 @@ import { connect } from 'react-redux';
 
 import * as ActionCreators from '../Actions/actionCreators';
 import TestButton from '../Components/TestButton.jsx';
+import { getClickedTimes } from '../Selectors/testSelector';
 
 class TestButtonContainer extends Component {
     render() {
         return (
-            <TestButton onClick={this.props.onClick}/>
+            <TestButton onClick={this.props.onClick} clickedTimes={this.props.clickedTimes}/>
         );
     }
 };
 
 function mapStateToProps(state) {
-    return {}
+    return {
+        clickedTimes: getClickedTimes(state),
+    }
 };
 
 function mapDispatchToProps(dispatch) {
