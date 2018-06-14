@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
+import TestButtonContainer from '../Containers/TestButtonContainer';
+
 class App extends Component {
   render() {
     return (
-      <div className="ui primary button">
-        <button className="ui primary button">Click Me</button>
-      </div>  
+      <TestButtonContainer/>  
     )
   }
 }
