@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Input } from 'semantic-ui-react';
 
 class MortgageCalculation extends Component {
   render() {
     return (
       <div>
-        <input className="ui massive input" type="text" placeholder="Enter the number of years..."></input>
+        <Input 
+          placeholder="Enter the number of years..." 
+          label={{basic: true, content: 'years'}}
+          labelPosition='right'
+        />
       </div>  
     )
   }

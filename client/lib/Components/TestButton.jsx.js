@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'semantic-ui-react';
 
 class TestButton extends Component {
   render() {
     return (
       <div>
-        <button className="ui primary button" onClick={this.props.onClick}>Click Me</button>
+        <Button primary onClick={this.props.onClick}>Click Me</Button>
         <p>The button has been clicked {this.props.clickedTimes} times!</p>
       </div>  
     )
